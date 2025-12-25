@@ -1,9 +1,15 @@
 <script setup>
+import { onMounted } from 'vue'
 defineProps({
   msg: {
     type: String,
     required: true,
   },
+})
+
+onMounted(() => {
+  // Code here runs when the component is mounted
+  console.log('Component has been mounted')
 })
 </script>
 
