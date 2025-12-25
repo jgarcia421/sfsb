@@ -8,6 +8,8 @@
   function verifyPassword() {
     if(password.value.toLowerCase() == 'isitchristmasyet') {
       validated.value = true;
+    } else {
+      alert('Wrong password...try again!');
     }
   }
   
