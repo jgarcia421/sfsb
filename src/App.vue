@@ -6,7 +6,7 @@
   const validated = ref(false);
   
   function verifyPassword() {
-    if(password.value == 'IsItChristmasYet') {
+    if(password.value.toLowerCase() == 'isitchristmasyet') {
       validated.value = true;
     }
   }
@@ -45,8 +45,9 @@ header {
 }
 
 .clue {
+  margin:2em 0;
   text-align:center;
-  font-size:2.5em;
+  font-size:2.25em;
   
   .line-1 {
     color:#53ac18;
@@ -60,11 +61,11 @@ header {
 .password-form {
   display:block;
   text-align:center;
-  margin:0 auto;
+  margin:3em auto;
   
   label {
     display:block;
-    font-size:3em;
+    font-size:2.75em;
   }
   
   input {
@@ -75,7 +76,7 @@ header {
     transition:background-color 250ms, outline 250ms;
     line-height:1em;
     padding:0;
-    width:15em;
+    width:10em;
     margin:0.5em 0;
     
     &:focus {
